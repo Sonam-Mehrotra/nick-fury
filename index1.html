@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Resume Builder</title>  
+	<style type="text/css">
+		
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+		.container {
+  border-radius: 5px;
+  background-color: #ac5555;
+  background-image: url("images/img-3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+
+.col-1{
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  color: white;
+  font-size: 20px;
+}
+
+.col-2{
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+li{
+	list-style-type: none;
+}
+h1{
+	text-align: center;
+	color: white;
+}
+h3{
+	font-size: 30px;
+	color: #b7a7a7;
+}
+
+input[type=text],input[type=email],input[type=tel],input[type=number],input[type=year], select{
+  width: 60%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #000000;
+  color: white;
+  font-size: 20px;
+  padding: 15px 20px;
+  border: solid;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+
+}
+input[type=submit]:hover {
+  background-color: #89a0cd;
+}
+	</style>                                                                                       
+</head>
+<body>
+	<div class="container">
+		<h1><i><u>CREATE YOUR RESUME</u></i></h1>
+		<form action= "insert.php" method="post">
+			<h1>ABOUT</h1>
+			<div class="row">
+				<div class="col-1">
+					<label for="fname">First Name</label>
+		        </div>
+		        <div class="col-2">
+		        	<input type="text" name="firstname" id="fname" placeholder="Enter your name...">
+		        </div>
+		    </div>
+		    <div class="row">
+		    	<div class="col-1">
+		    		<label for="lname">Last Name</label>
+		    	</div>
+		    	<div class="col-2">
+		    		<input type="text" name="lastname" id="lname" placeholder="Enter your last name...">
+		    	</div>
+		    </div>
+		    <div class="row">
+		    	<div class="col-1">
+		    		<label for="city">City</label>
+		    	</div>
+		    	<div class="col-2">
+		    		<input type="text" name="cityname" id="city">
+		    	</div>
+		    </div>
+		    <div class="row">
+		    	<div class="col-1">
+		    		<label for="state">State</label>
+		    	</div>
+		    	<div class="col-2">
+		    		<select id="state" name="state">
+		    			<option value="andhra pradesh">Andhra Pradesh</option>
+                        <option value="arunachal pradesh">Arunachal Pradesh</option>
+                        <option value="assam">Assam</option>
+                        <option value="bihar">Bihar</option>
+                        <option value="chhattisgarh">Chhattisgarh</option>
+                        <option value="goa">Goa</option>
+                        <option value="gujarat">Gujarat</option>
+                        <option value="haryana">Haryana</option>
+                        <option value="himachal pradesh">Himachal Pradesh</option>
+                        <option value="jharkhand">Jharkhand</option>
+                        <option value="karnataka">Karnataka</option>
+                        <option value="kerala">Kerala</option>
+                        <option value="madhya pradesh">Madhya Pradesh</option>
+                        <option value="maharashtra">Maharashtra</option>
+                        <option value="manipur">Manipur</option>
+                        <option value="meghalaya">Meghalaya</option>
+                        <option value="mizoram">Mizoram</option>
+                        <option value="nagaland">Nagaland</option>
+                        <option value="odisha">Odisha</option>
+                        <option value="punjab">Punjab</option>
+                        <option value="rajasthan">Rajasthan</option>
+                        <option value="sikkim">Sikkim</option>
+                        <option value="tamil nadu">Tamil Nadu</option>
+                        <option value="telangana">Telangana</option>
+                        <option value="tripura">Tripura</option>
+                        <option value="uttar pradesh">Uttar Pradesh</option>
+                        <option value="uttarakhand">Uttarakhand</option>
+                        <option value="west bengal">West Bengal</option>
+                    </select>
+                </div>
+		    </div>
+		    <div class="row">
+		    	<div class="col-1">
+		    		<label for="phone">Phone Number</label>
+		    	</div>
+		    	<div class="col-2">
+		    		<input type="tel" name="phone" id="phone" pattern="[0-9]{10}">
+		    	</div>
+		    </div>
+		    <div class="row">
+		    	<div class="col-1">
+		    		<label for="email">Email id</label>
+		    	</div>
+		    	<div class="col-2">
+		    		<input type="email" name="email" id="email" placeholder="abc@yahoo.com">
+		    	</div>
+		    </div>	
+
+		    <h1>Skills</h1>
+		    <div class="row">
+		    	<div class="col-1">
+		    		<label for="skills">First</label>
+		    	</div>
+		    	<div class="col-2">
+		    		<li><input type="text" name="sills" id="skills"></li>
+		    	</div>
+		    </div>
+		    <div class="row">
+		    	<div class="col-1">
+		    		<label for="skills">Second</label>
+		    	</div>
+		    	<div class="col-2">
+		    		<li><input type="text" name="sills" id="skills"></li>
+		    	</div>
+		    </div>
+		    <div class="row">
+		    	<div class="col-1">
+		    		<label for="skills">Third</label>
+		    	</div>
+		    	<div class="col-2">
+		    		<li><input type="text" name="sills" id="skills"></li>
+		    	</div>
+		    </div>
+		    <div class="row">
+		    	<div class="col-1">
+		    		<label for="skills">Fourth</label>
+		    	</div>
+		    	<div class="col-2">
+		    		<li><input type="text" name="sills" id="skills"></li>
+		    	</div>
+		    </div>
+		    <div class="row">
+		    	<div class="col-1">
+		    		<label for="skills">Fifth</label>
+		    	</div>
+		    	<div class="col-2">
+		    		<li><input type="text" name="sills" id="skills"></li>
+		    	</div>
+		    </div>
+
+		    <h1>Academics</h1>
+		    <h3>Higher Education:-</h3>
+		    <div class="row">
+		    	<div class="col-1">
+		    		<label for="tenth">Percentage</label>
+		    	</div>
+		    	<div class="col-2">
+		    		<input type="number" name="tenth" id="tenth" min="00" max="100">
+		    	</div>
+		    </div>
+		    <div class="row">
+		    	<div class="col-1">
+		    		<label for="school">School</label>
+		    	</div>
+		    	<div class="col-2">
+		    		<input type="text" name="school" id="school">
+		    	</div>
+		    </div>
+		    <div class="row">
+		    	<div class="col-1">
+		    		<label for="board">Board</label>
+		    	</div>
+		    	<div class="col-2">
+		    		<input type="text" name="board" id="board">
+		    	</div>
+		    </div>
+		    <div class="row">
+		    	<div class="col-1">
+		    		<label for="year">Year</label>
+		    	</div>
+		    	<div class="col-2">
+		    		<input type="year" name="board" id="board" pattern="[0-9]{4}">
+		    	</div>
+		    </div>
+
+		    <h3>Secondary Education:-</h3>
+		    <div class="row">
+		    	<div class="col-1">
+		    		<label for="tenth">Percentage</label>
+		    	</div>
+		    	<div class="col-2">
+		    		<input type="number" name="tenth" id="tenth" min="00" max="100">
+		    	</div>
+		    </div>
+		    <div class="row">
+		    	<div class="col-1">
+		    		<label for="school">School</label>
+		    	</div>
+		    	<div class="col-2">
+		    		<input type="text" name="school" id="school">
+		    	</div>
+		    </div>
+		    <div class="row">
+		    	<div class="col-1">
+		    		<label for="board">Board</label>
+		    	</div>
+		    	<div class="col-2">
+		    		<input type="text" name="board" id="board">
+		    	</div>
+		    </div>
+		    <div class="row">
+		    	<div class="col-1">
+		    		<label for="year">Year</label>
+		    	</div>
+		    	<div class="col-2">
+		    		<input type="year" name="board" id="board" pattern="[0-9]{4}">
+		    	</div>
+		    </div>
+
+		    <h3>Graduation:-</h3>
+		    <div class="row">
+		    	<div class="col-1">
+		    		<label for="tenth">Percentage</label>
+		    	</div>
+		    	<div class="col-2">
+		    		<input type="number" name="tenth" id="tenth" min="00" max="100">
+		    	</div>
+		    </div>
+		    <div class="row">
+		    	<div class="col-1">
+		    		<label for="college">College</label>
+		    	</div>
+		    	<div class="col-2">
+		    		<input type="text" name="college" id="college">
+		    	</div>
+		    </div>
+		    <div class="row">
+		    	<div class="col-1">
+		    		<label for="board">Board</label>
+		    	</div>
+		    	<div class="col-2">
+		    		<input type="text" name="board" id="board">
+		    	</div>
+		    </div>
+		    <div class="row">
+		    	<div class="col-1">
+		    		<label for="year">Year</label>
+		    	</div>
+		    	<div class="col-2">
+		    		<input type="year" name="board" id="board" pattern="[0-9]{4}">
+		    	</div>
+		    </div>
+		    <div class="row">
+		    	<input type="submit" value="Submit" class="btn">
+            </div>
+		</form>
+	</div>
+</body>
+</html>

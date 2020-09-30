@@ -1,0 +1,115 @@
+.dropbtn {
+  background-color: #815d5f;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: #815d5f;
+}
+.lines-drp{
+  width: 25px;
+  height: 2px;
+  background-color: white;
+  margin: 6px 0;
+}
+.bg-img{
+	background-image: url("https://source.unsplash.com/1600x900");
+	min-height: 700px;
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.text-on-img{
+	font-size: 50px;
+	position: center;
+	text-align: center;
+	padding-left: 80px;
+	padding-right: 50px;
+	padding-top: 90px;
+	display: block;
+	font-weight: lighter;
+	color: #ffffff;
+}
+.bg-image{
+	background-image: url("images/img-1.jpg");
+	min-height: 350px;
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: right;
+  margin: auto;
+  padding-top: 400px;
+}
+.btn{
+	background-color: #ced1d4;
+	position: relative;
+	border: ridge;
+	color: #000000;
+	text-align: center;
+	font-size: 35px;
+	transition: 0.3s;
+	border: 3px solid #b52a2a;
+	border-color: #000000;
+	border-radius: 50px;
+	margin-left: 300px;
+	margin-top: 150px;
+	margin-bottom: 100px;
+	margin-right: 250px;
+}
+
+.btn:hover{
+	background-color:#b52a2a;
+}
+footer{
+	background-color: #000000;
+	color: #ffffff;
+	min-height: 200px;
+}
+.section{
+	 background-color: lightgrey;
+  border: 7px solid black;
+  padding: 10px;
+  margin: 10px;
+  box-sizing: content-box;
+  font-size: 18px;
+}
+h1{
+	font-size: 50px;
+}
+section{
+	padding: 0px;
+	margin: 0px;
+	grid-row-gap: 0px;
+}
